@@ -29,7 +29,7 @@ defmodule Sigils do
   end
 
   koan "The ~w sigil also allows interpolation" do
-    assert ~w(Hello 1#{1+1}3) == ["Hello","123s"]
+    assert ~w(Hello 1#{1+1}3) == ["Hello","123"]
   end
 
   koan "The ~W sigil behaves to ~w as ~S behaves to ~s" do
